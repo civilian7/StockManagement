@@ -85,7 +85,7 @@ import requests
 url = "http://data-dbg.krx.co.kr/svc/sample/apis/idx/krx_dd_trd?basDd=20250102" 
 
 headers = {
-    "auth_key": "74D1B99DFBF345BBA3FB4476510A4BED4C78D13A"  # 테스트용 APU키
+    "auth_key": "74D1B99DFBF345BBA3FB4476510A4BED4C78D13A"  # 테스트용 API키
 }
 
 response = requests.get(url, headers=headers)
@@ -108,10 +108,12 @@ uses
   System.Classes,
   System.Net.HttpClient;
 
-{APPTYPE CONSOLE}
+{$APPTYPE CONSOLE}
+
 begin
   var LHttpClient := THttpClient.Create;
   try
+    // API 키를 헤더에 넣는다
     LHttpClient.CustomHeaders['AUTH_KEY'] := '74D1B99DFBF345BBA3FB4476510A4BED4C78D13A';
     var LUrl := 'http://data-dbg.krx.co.kr/svc/sample/apis/idx/krx_dd_trd?basDd=20250102';
     var LResponse := LHttpClient.Get(LUrl);
@@ -119,6 +121,8 @@ begin
       WriteLn(LResponse.ContentAsString(TEncoding.UTF8))
     else
       WriteLn(LResponse.StatusText);
+
+    ReadLn;
   finally
     LHttpClient.Free;
   end;
