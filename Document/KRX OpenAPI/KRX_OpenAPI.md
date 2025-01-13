@@ -47,7 +47,7 @@ KRX 시리즈 지수의 시세정보를 제공.
 #### 입력항목
 <table>
 <tr>
-  <th width=50px>번호</th>
+  <th width=60px>번호</th>
   <th width=150px>항목명</th>
   <th width=150px>입력값</th>
   <th width=400px>비고</th>
