@@ -42,5 +42,5 @@ Source
 
 ## 문의
 
-이메일: civilian7@gmail.com
+이메일: civilian7@gmail.com<br>
 개발자: 시골프로그래머
