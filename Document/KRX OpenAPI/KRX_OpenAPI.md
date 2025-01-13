@@ -45,11 +45,20 @@
 KRX 시리즈 지수의 시세정보를 제공.
 
 #### 입력항목
-
-|번호|항목명|입력력값|비고|
-|--|--|--|--|
-|1|basDd|YYYYMMDD|조회일자|
-
+<table>
+<tr>
+  <th width=50px>번호</th>
+  <th width=150px>항목명</th>
+  <th width=150px>입력값</th>
+  <th width=400px>비고</th>
+</tr>
+<tr>
+  <td align=center>1</td>
+  <td>basDd</td>
+  <td>조회일자</td>
+  <td>YYYYMMDD  ex) 20250102</td>
+</tr>
+</table>
 
 #### 출력항목
 
